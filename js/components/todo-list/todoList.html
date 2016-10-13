@@ -1,0 +1,22 @@
+<div>
+  <form name="frm" ng-submit="todoList.addTodo(todoList.newTodo)">
+    <input type="text" name="newTodo" ng-model="todoList.newTodo" required />
+    <button ng-disabled="frm.$invalid">Go</button>
+  </form>
+
+  <button ng-click="todoList.clearCompleted()">Clear Completed</button>
+  <button ng-click="todoList.getCategory()">Get Cat</button>
+
+  <ul>
+    <li ng-repeat="todo in todoList.getTodos()">
+      <input type="checkbox" ng-model="todo.done" />
+      <span ng-class="{ 'done': todo.done }">
+        {{ todo.title }}
+      </span>
+      <button ng-click="todoList.removeTodo(todo)">Remove</button>
+    </li>
+  </ul>
+  <div ng-if="todos.length===0">
+    You've finished all your todos!
+  </div>
+</div>

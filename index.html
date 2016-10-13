@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>todo</title>
+    <style>
+      .done {
+        text-decoration: line-through;
+        color:#ccc
+      }
+    </style>
+</head>
+
+<body>
+  <todo-list></todo-list>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="js/services/todoService.js"></script>
+  <script src="js/services/index.js"></script>
+  <script src="js/components/todo-list/todoList.ctrl.js"></script>
+  <script src="js/components/todo-list/todoList.js"></script>
+  <script src="js/components/index.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

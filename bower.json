@@ -1,0 +1,17 @@
+{
+  "name": "ng_todo",
+  "authors": [
+    "sujansaundara <sujansaundara@gmail.com>"
+  ],
+  "description": "Angular ToDo List",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
